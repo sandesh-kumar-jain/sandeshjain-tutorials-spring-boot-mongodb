@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -30,6 +31,13 @@ import com.sandeshjain.tutorials.repository.TutorialRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * @author Sandesh Jain
+ */
+@Tag(
+        name = "CRUD REST APIs for Tutorials in Sandesh_Jain_Publication",
+        description = "CRUD REST APIs in Sandesh_Jain_Publication to CREATE, UPDATE, FETCH AND DELETE Tutorials details."
+)
 @CrossOrigin(origins = "http://localhost:8081")
 @RestController
 @RequestMapping("/api")
